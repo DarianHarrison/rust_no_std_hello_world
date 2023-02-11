@@ -2,13 +2,13 @@
  embedded dev
 
 
-prereqs
+ 0. prereqs
 ```
-- Linux
+- Linux box for dev (x86_64-unknown-linux-gnu)
 ```
 
 
-
+ 1. install the following dependencies for no_std
 ```bash
 rustup default nightly
 rustup update
@@ -21,8 +21,7 @@ cargo +nightly run -Zbuild-std=core,alloc --target x86_64-unknown-linux-gnu
 ```
 
 
-
-target arch can be switched to:
+ 2. target arch can be switched to:
 ```
 https://docs.rust-embedded.org/embedonomicon/compiler-support.html#built-in-target
 ```
