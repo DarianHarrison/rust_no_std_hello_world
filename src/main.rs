@@ -35,6 +35,6 @@ extern "C" fn main() {
     unsafe { 
         printf(b"Hello, World!\n" as *const u8);
     }
-    alloc::alloc::handle_alloc_error(alloc::alloc::Layout::new::<()>());
+    //alloc::alloc::handle_alloc_error(alloc::alloc::Layout::new::<()>());
 
 }
